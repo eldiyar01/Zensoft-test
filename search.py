@@ -1,5 +1,4 @@
 import difflib
-from collections import Counter
 
 
 inp = open("input.txt","r")
