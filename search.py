@@ -22,11 +22,11 @@ if choose == '1':
 
 
 elif choose == '2':
-	for source in inputs:
-		for destination in patterns:
-			destinationWords = destination.split()	
-			if all(word.lower() in source.lower() for word in destinationWords):
-				print(source)
+	for inp in inputs:
+		for pattern in patterns:
+			pattern_strings = pattern.split()	
+			if all(string in inp for string in pattern_strings):
+				print(inp)
 	print('------------------\n')
 
 
